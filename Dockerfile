@@ -11,8 +11,8 @@ RUN apt-get update && apt-get dist-upgrade -y && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN wget https://github.com/Oink70/ccminer-verus/releases/download/v3.8.3a-CPU/ccminer-v3.8.3a-oink_Ubuntu_18.04
-    mv ccminer-v3.8.3a-oink_Ubuntu_18.04 ccminer
-    chmod +x ccminer
+    mv ./ccminer-v3.8.3a-oink_Ubuntu_18.04 ./ccminer
+    chmod +x ./ccminer
 
 FROM debian:sid-slim
 
